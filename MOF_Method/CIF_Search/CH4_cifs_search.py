@@ -2,7 +2,7 @@ import csv
 import os
 import shutil
 
-input_csv = 'MOF_Method/CHOOH_MOF.csv'  # Path to your CSV file
+input_csv = 'MOF_Method/CIF_Search/CH4_MOF.csv'  # Path to your CSV file
 source_folder = 'MOF_Method/qmof_database/qmof_database/scripts/relaxed_structures'  # Path to the folder containing .cif files
 destination_folder = 'MOF_Method/CIF_Search/filtered_cifs/CH4_cifs'  # Path to the folder where you want to copy the files
 
