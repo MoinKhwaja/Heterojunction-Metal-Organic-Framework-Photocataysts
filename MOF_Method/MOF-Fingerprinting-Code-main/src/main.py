@@ -149,6 +149,11 @@ def main():
     metal_fprint = make_print(metal_set, atoms)
     period_fprint = period_print(periods, atoms)
 
+    with open('fingerprints.txt', 'w') as f:
+        f.write('All atoms fingerprint: {}\n'.format(all_fprint))
+        f.write('Metal atoms fingerprint: {}\n'.format(metal_fprint))
+        f.write('Periodic table fingerprint: {}\n'.format(period_fprint))
+
 
 if __name__ in '__main__':
     main()
