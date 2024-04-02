@@ -12,9 +12,13 @@ driver = webdriver.Chrome()
 driver.get("https://mofsimplify.mit.edu/")
 wait = WebDriverWait(driver, 10)
 
-directory = '/Users/moinkhwaja/Documents/GitHub/Heterojunction-Metal-Organic-Framework-Photocataysts/MOF_Method/Thermostability/thermostable_cifs/CH4_Stable'
+directory = '/Users/moinkhwaja/Documents/GitHub/Heterojunction-Metal-Organic-Framework-Photocataysts/MOF_Method/Thermostability/thermostable_cifs/CHOOH_Stable'
 
 files = [os.path.join(directory, f) for f in os.listdir(directory) if f.endswith('.cif')]
+
+results = []  
+
+first_time = True
 
 for upload_file in files:
     driver.execute_script("window.scrollTo(0, 0);")
@@ -23,7 +27,12 @@ for upload_file in files:
     upload_button.click()
 
     time.sleep(5)
-    pyautogui.write(upload_file, interval=0.1)
+    if first_time:
+        pyautogui.write(upload_file, interval=0.1)
+        first_time = False
+    else:
+        filename = os.path.basename(upload_file)
+        pyautogui.write(filename, interval=0.1)
     pyautogui.press('return')
     time.sleep(5)
     pyautogui.press('return')
@@ -31,19 +40,16 @@ for upload_file in files:
     submit_button = wait.until(EC.element_to_be_clickable((By.ID, "predict_s")))
     submit_button.click()
 
+    filename = os.path.basename(upload_file)
+    pyautogui.write(filename, interval=0.1)
+    pyautogui.press('return')
+    time.sleep(5)
+    pyautogui.press('return')
+
     time.sleep(30)
 
-    try:
-        stability_read = wait.until(EC.visibility_of_element_located((By.ID, "solvent_stability_prediction")))
-        result = (os.path.basename(upload_file), stability_read.text)
-    except (TimeoutException, UnexpectedAlertPresentException):
-        result = (os.path.basename(upload_file), "Failed")
-        try:
-            alert = driver.switch_to.alert
-            alert.accept()
-        except:
-            pass  
-
-    results.append(result)
-
+    descip_botton = wait.until(EC.element_to_be_clickable((By.ID, "download_descriptors")))
+    descip_botton.click()
+    time.sleep(5)
+    
 driver.quit()

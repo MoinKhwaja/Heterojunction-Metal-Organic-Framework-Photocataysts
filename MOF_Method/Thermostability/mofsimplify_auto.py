@@ -12,7 +12,7 @@ driver = webdriver.Chrome()
 driver.get("https://mofsimplify.mit.edu/")
 wait = WebDriverWait(driver, 10)
 
-directory = '/Users/moinkhwaja/Documents/GitHub/Heterojunction-Metal-Organic-Framework-Photocataysts/MOF_Method/CIF_Search/filtered_cifs/CH4_cifs'
+directory = '/Users/moinkhwaja/Documents/GitHub/Heterojunction-Metal-Organic-Framework-Photocataysts/MOF_Method/CIF_Search/filtered_cifs/CHOOH_cifs'
 
 files = [os.path.join(directory, f) for f in os.listdir(directory) if f.endswith('.cif')]
 
