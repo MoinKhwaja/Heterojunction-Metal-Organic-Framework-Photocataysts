@@ -1,0 +1,15 @@
+qmof_id,Material ID,CBM Comparison,VBM Comparison,type,core synthesized,mof synthesized,target
+qmof-3b48e5d,mp-20015,higher,higher,2,yes,yes,yes
+qmof-3b48e5d,mp-14367,higher,higher,2,yes,yes,yes
+qmof-3b48e5d,mp-541114,lower,higher,2(low),yes,yes,yes
+qmof-3b48e5d,mp-28299,higher,higher,2,yes,yes,yes
+qmof-3b48e5d,mp-562338,higher,higher,2,yes,yes,yes
+qmof-3b48e5d,mp-554944,higher,higher,2,yes,yes,yes
+qmof-3b48e5d,mp-29193,higher,higher,2,yes,yes,yes
+qmof-60626cd,mp-20015,higher,higher,2,yes,yes,yes
+qmof-60626cd,mp-14367,higher,higher,2,yes,yes,yes
+qmof-60626cd,mp-541114,lower,higher,2(low),yes,yes,yes
+qmof-60626cd,mp-28299,higher,higher,2,yes,yes,yes
+qmof-60626cd,mp-562338,higher,higher,2,yes,yes,yes
+qmof-60626cd,mp-554944,higher,higher,2,yes,yes,yes
+qmof-60626cd,mp-29193,higher,higher,2,yes,yes,yes
