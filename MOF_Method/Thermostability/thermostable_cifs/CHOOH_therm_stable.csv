@@ -1,4 +1,4 @@
-File,Stability,StabilityScore
+qmof_id,Stability,StabilityScore
 qmof-912bab6.cif,The solvent removal stability prediction is: 0.62. Fairly confident the MOF is stable upon solvent removal.,0.62
 qmof-099c53d.cif,"The solvent removal stability prediction is: 0.53. Uncertain, but predict the MOF is stable upon solvent removal.",0.53
 qmof-6038f07.cif,"The solvent removal stability prediction is: 0.5. Uncertain, but predict the MOF is unstable upon solvent removal.",0.5
