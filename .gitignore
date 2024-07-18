@@ -2,3 +2,5 @@ Metal_Oxide_Method/api_key.py
 Metal_Oxide_Method/farming/api_key.py
 MOF_Method/qmof_database
 MOF_Method/CIF_Search/filtered_cifs
+Metal_Oxide_Method/HSE_database_method/api_key.py
+Metal_Oxide_Method/waterStability/api_key.py
