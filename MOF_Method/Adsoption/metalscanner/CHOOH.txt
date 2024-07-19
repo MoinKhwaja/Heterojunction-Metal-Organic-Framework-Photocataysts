@@ -1,0 +1,20 @@
+
+Validating property : "has_oms"
+Validated 100 %                                                                                                          
+             Metal Types Has OMS OMS Types
+qmof-912bab6          Al      No       N/A
+qmof-3a9ad54          Al      No       N/A
+qmof-fa2b07a          Hf      No       N/A
+qmof-d192e8d          Zn      No       N/A
+qmof-38471da          Al     Yes        Al
+qmof-077f6af          Al     Yes        Al
+qmof-bd9ffd3          Al      No       N/A
+qmof-60626cd          Zn      No       N/A
+qmof-f62972b          Zr      No       N/A
+qmof-0bbe221          Zr      No       N/A
+qmof-beb185c          Al     Yes        Al
+qmof-8325046          Al     Yes        Al
+qmof-3b48e5d          Cd      No       N/A
+qmof-c3298fb          Al     Yes        Al
+qmof-10b2259          Al     Yes        Al
+qmof-c3ad823          Zn     Yes        Zn
